@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>840</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <kerning>true</kerning>
+   </font>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(108, 143, 196, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>59</x>
+      <y>33</y>
+      <width>731</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>740</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Snap ITC</family>
+      <pointsize>36</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;APP GESTORA&lt;br/&gt;DEL&lt;br/&gt;INSTITUT LES SALINES&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::TextInteractionFlag::TextEditable</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_searchProfesor">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>220</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton {
+border:1px solid black;
+border-radius: 10px;
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+border-radius:8px;
+}
+QPushButton:hover {
+background-color:white;
+color:rgb(0, 84, 166);
+}
+QPushButton:pressed  {
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Buscar profesor</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_addProfesor">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>220</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+border:1px solid black;
+border-radius: 10px;
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+border-radius:8px;
+}
+QPushButton:hover {
+background-color:white;
+color:rgb(0, 84, 166);
+}
+QPushButton:pressed  {
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Añadir profesor</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_searchAlumno">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>270</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+border:1px solid black;
+border-radius: 10px;
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+border-radius:8px;
+}
+QPushButton:hover {
+background-color:white;
+color:rgb(0, 84, 166);
+}
+QPushButton:pressed  {
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Buscar Alumno</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_addAlumno">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>270</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+border:1px solid black;
+border-radius: 10px;
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+border-radius:8px;
+}
+QPushButton:hover {
+background-color:white;
+color:rgb(0, 84, 166);
+}
+QPushButton:pressed  {
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>AñadirAlumno</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_eliminar">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>320</y>
+      <width>731</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton {
+border:1px solid black;
+border-radius: 10px;
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+border-radius:8px;
+}
+QPushButton:hover {
+background-color:red;
+color:black;
+}
+QPushButton:pressed  {
+background-color: rgb(0, 84, 166);
+color: white;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Eliminar Profesor/Alumno</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_userOn">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>10</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+background-color: transparent;
+color:rgb(0, 84, 166);
+}</string>
+    </property>
+    <property name="text">
+     <string>Usuario:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_changeUser">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton {
+border:1px solid black;
+border-radius: 10px;
+background-color: rgb(0, 84, 166);
+color: black;
+border-radius:8px;
+}
+QPushButton:hover {
+background-color:white;
+color:rgb(0, 84, 166);
+}
+QPushButton:pressed  {
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Cambiar usuario</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_matriculas">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>220</y>
+      <width>161</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+border:1px solid black;
+border-radius: 10px;
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+border-radius:8px;
+}
+QPushButton:hover {
+background-color:white;
+color:rgb(0, 84, 166);
+}
+QPushButton:pressed  {
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Matriculas</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_materias">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>220</y>
+      <width>161</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+border:1px solid black;
+border-radius: 10px;
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+border-radius:8px;
+}
+QPushButton:hover {
+background-color:white;
+color:rgb(0, 84, 166);
+}
+QPushButton:pressed  {
+background-color: rgb(0, 84, 166);
+color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Materias</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
